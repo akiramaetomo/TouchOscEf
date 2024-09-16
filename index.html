@@ -370,7 +370,7 @@
           }
 
           // デバッグ情報の更新
-          updateDebugInfo(pointerId, frequency, volume, 'START');
+          //updateDebugInfo(pointerId, frequency, volume, 'START');
 
         } catch (error) {
           console.error(`Failed to start oscillator for pointer ID ${pointerId}:`, error);
@@ -413,7 +413,7 @@
           }
 
           // デバッグ情報の更新
-          updateDebugInfo(pointerId, null, null, 'STOP');
+          //updateDebugInfo(pointerId, null, null, 'STOP');
 
         } catch (error) {
           console.error(`Failed to stop oscillator for pointer ID ${pointerId}:`, error);
@@ -505,7 +505,7 @@
             });
         
             // デバッグ情報の更新
-            updateDebugInfo(event.pointerId, frequency, volume, 'MOVE');
+            //updateDebugInfo(event.pointerId, frequency, volume, 'MOVE');
           }
         });
 
@@ -549,7 +549,7 @@
           pointers['keyboard'].classList.add('active');
 
           // デバッグ情報の更新
-          updateDebugInfo('keyboard', frequency, volume, 'START');
+          //updateDebugInfo('keyboard', frequency, volume, 'START');
         }
       });
 
